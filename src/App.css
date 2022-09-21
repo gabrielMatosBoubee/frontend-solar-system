@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -5,4 +11,35 @@
 body {
   background-image: url('./images/background.png');
   color: aliceblue;
+}
+
+.missãoCard {
+  background: rgba(24, 26, 37, 0.5);
+  border: 1px solid white;
+  border-radius: 17px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  mix-blend-mode: hard-light;
+  position: relative;
+  top: 36px;
+  width: 496px;
+}
+
+.missão {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 50% auto;
+  margin: auto;
+}
+
+.missão1 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  left: 44%;
+  margin: auto;
+  position: absolute;
 }
