@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') ;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,7 +20,9 @@ body {
   border: 1px solid white;
   border-radius: 17px;
   box-sizing: border-box;
+  display: flex;
   flex-wrap: wrap;
+  height: 192px;
   mix-blend-mode: hard-light;
   position: relative;
   top: 36px;
@@ -27,19 +31,68 @@ body {
 
 .missão {
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 50% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   margin: auto;
+  width: 30000px;
 }
 
 .missão1 {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  padding: 100px;
 }
 
 .titulo {
   left: 44%;
   margin: auto;
   position: absolute;
+}
+
+.dadosMissão {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  width: 500px;
+}
+
+.tituloDaMissão {
+  font-family: Epilogue , sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  padding: 40px;
+  text-transform: uppercase;
+}
+
+.planetas {
+  display: inline-flex;
+}
+
+.planet-card {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+  width: 150px;
+}
+
+.planet-img {
+  width: 150px;
+}
+
+.planet-img:hover {
+  border-radius: 200px;
+  box-shadow: 0 0 100px rgb(207, 207, 207);
+  transform: scale(1.8);
+}
+
+header h1 {
+  text-align: center;
+  transform: matrix(1, 0, 0.01, 1, 0, 0);
 }
